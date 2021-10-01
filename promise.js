@@ -35,8 +35,8 @@ const getApiV1 = () => {
   
   // Normal Promise 
 
-  getApiV1().
-  then((result)=> {
+  getApiV1()
+  .then((result)=> {
     const {data} = result ;
     const realJson= JSON.parse (data);
     for (let d in realJson.data) {
